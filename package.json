@@ -18,5 +18,10 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/kaelzhang/node-document/issues"
+  },
+  "dependencies": {
+    "clean": "~2.1.2",
+    "ejs": "~0.8.4",
+    "glob": "~3.2.6"
   }
 }
