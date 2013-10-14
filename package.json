@@ -1,0 +1,22 @@
+{
+  "name": "document",
+  "version": "0.1.0",
+  "description": "Create your document site with just one command.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kaelzhang/node-document.git"
+  },
+  "keywords": [
+    "document",
+    "web-server"
+  ],
+  "author": "kael",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kaelzhang/node-document/issues"
+  }
+}
