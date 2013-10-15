@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "Create your document site with just one command.",
   "main": "index.js",
+  "bin": {
+    "document": "bin/document.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,6 +25,15 @@
   "dependencies": {
     "clean": "~2.1.2",
     "ejs": "~0.8.4",
-    "glob": "~3.2.6"
+    "glob": "~3.2.6",
+    "express": "~3.4.0",
+    "fs-sync": "~0.2.4",
+    "async": "~0.2.9",
+    "marked": "~0.2.9",
+    "highlight.js": "~7.3.0"
+  },
+  "devDependencies": {
+    "mocha": "~1.13.0",
+    "chai": "~1.8.1"
   }
 }
