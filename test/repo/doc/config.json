@@ -22,5 +22,5 @@
     },
     "site_root": "/docs",
     "index": "README.md",
-    "default_language": "zh-CN"
+    "default_language": "en-US"
 }
