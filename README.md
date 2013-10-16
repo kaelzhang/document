@@ -6,7 +6,7 @@
 
 Create your document site with only **ONE** command.
 
-# Life gets easier
+## Life gets easier
 
 To create your document site, just:
 
@@ -18,7 +18,7 @@ document
 
 Oh YEAH! That's it! We made it!
 
-# Feature
+## Feature
 
 - Could not be easier ! Just ONE command!
 - Build with [node.js](http://nodejs.org), yeah !
@@ -32,11 +32,11 @@ Oh YEAH! That's it! We made it!
 - `document` middleware for [express.js](http://expressjs.com). (what's comming...)
 
 
-# Usage
+## Usage
 
 Visit [the document site](http://kael.me/document) for details.
 
-## Specify the `doc` Directory
+### Specify the `doc` Directory
 
 By default, if your repo is based on commonjs, `document` will use the [`directories.doc`](http://wiki.commonjs.org/wiki/Packages/1.0#Package_Directory_Layout) field of the package.json as the document root.
 
@@ -48,7 +48,7 @@ But you can specify it by using `--doc` argument, for example:
 document --doc /somewhere/else
 ```
 
-## Basic Informations
+### Basic Informations
 
 It's best to use `document` command at the root of your repo, in order to read the package.json.
 
@@ -58,14 +58,18 @@ It's best to use `document` command at the root of your repo, in order to read t
 - tagline: the description
 
 
-# Credits
+## Credits
 
 `document@0.x.x` uses the theme of [daux.io](daux.io), thanks a million.
 
+## Contribution
 
-# What's comming!
+- issues: [https://github.com/kaelzhang/node-document/issues](https://github.com/kaelzhang/node-document/issues)
 
-## Vision `1.x.x`
+
+## What's comming!
+
+### Vision `1.x.x`
 
 > Actually, all those features below has been designed and implemented at the very beginning of `document`, but they were not fully tested yet.
 >
