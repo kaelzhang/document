@@ -31,9 +31,8 @@ clean(schema).parseArgv(process.argv, function(err, args, details){
         var site_root = cfg.user.site_root;
 
         var app = express();
-        app.use(site_root, server(cfg)); console.log('static', cfg.sys.public_root)
         app.use(site_root, express.static( cfg.sys.public_root ));
-        app.use(site_root, express.directory( cfg.sys.public_root ));
+        app.use(site_root, server(cfg));
 
         app.listen(port, function () {
             console.log('started at http://localhost:' + port );
