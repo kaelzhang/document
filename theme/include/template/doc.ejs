@@ -1,40 +1,4 @@
-<!doctype html>
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-<head>
-    <title><%= config.title %></title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="description" content="<%= config['tagline'] %>" />
-    <meta name="author" content="<%= config['title'] %>">
-    <% if (config.colors) { %>
-    <link rel="icon" href="<%= config.site_root %>/img/favicon.png" type="image/x-icon">
-    <% } else { %>
-    <link rel="icon" href="<%= config.site_root %>/img/favicon-<%= config['theme'] %>.png" type="image/x-icon">
-    <% } %>
-    <!-- Mobile -->
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Font -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="<%= config.site_root %>/css/daux-<%= config.theme %>.css">
-
-    <!-- hightlight.js -->
-    <script src="<%= config.site_root %>/js/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-
-    <!-- Navigation -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
-    <script src="<%= config.site_root %>/js/bootstrap.min.js"></script>
-    <script src="<%= config.site_root %>/js/custom.js"></script>
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-</head>
-
-
+<% include header %>
 <% if (config['repo']) { %>
     <a href="https://github.com/<%= config['repo'] %>" target="_blank" id="github-ribbon"><img src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
 <% } %>
@@ -71,4 +35,5 @@
     </div>
 </div>
 </body>
+<% include footer %>
 </html>

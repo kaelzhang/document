@@ -1,7 +1,6 @@
 {
     "title": "DAUX.IO",
     "tagline": "The Easiest Way To Document Your Project",
-    "docs_path": "../cortex/doc",
     "image": "img/app.png",
     "theme": "navy",
     "date_modified": true,
@@ -17,10 +16,12 @@
         "Made by Todaymade": "http://todaymade.com"
     },
     "languages": {
-        "zh-CN": "中文",
-        "en-US": "English"
+        "en-US": "English",
+        "zh-CN": "中文"
     },
-    "site_root": "/docs",
+    "site_root": "/docs/",
     "index": "README.md",
-    "default_language": "en-US"
+
+    "// url_rewrite_type": "dir, title",
+    "url_rewrite_type": ""
 }

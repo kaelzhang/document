@@ -27,12 +27,12 @@ clean(schema).parseArgv(process.argv, function(err, args, details){
         }
 
         var app = express();
-        app.use(cfg.site_root, server(cfg));
-        app.use(cfg.site_root, express.static( cfg.sys.public_root ));
+        app.use(cfg.user.site_root, server(cfg)); console.log('static', cfg.sys.public_root)
+        app.use(cfg.user.site_root, express.static( cfg.sys.public_root ));
 
         app.listen(port, function () {
             console.log('started at http://localhost:' + port );
-            require('child_process').exec('open http://localhost:' + port + cfg.site_root);
+            require('child_process').exec('open http://localhost:' + port + cfg.user.site_root);
         });
     });
 });
