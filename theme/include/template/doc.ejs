@@ -58,12 +58,13 @@
             </div>
             <div id="sub-nav-collapse" class="sub-nav-collapse">
                 <!-- Navigation -->
+                <%- tools.nav(tree, current) %>
             </div>
         </div>
         <div class="right-column content-area span9">
             <div class="content-page">
                 <article>
-                    <%- docs.html %>
+                    <%- current.html %>
                 </article>
             </div>
         </div>
