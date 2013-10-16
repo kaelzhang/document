@@ -8,19 +8,16 @@ Create your document site with only one command.
 
 `document` also contains utility methods to parse the document tree.
 
-# Installation
+# Life gets easier
 
-    # use document as a node.js module
-    npm install document --save
+To create your document site, just:
 
-    # use document as a command-line tool
-    npm install document -g
+```sh
+# use document as a command-line tool
+npm install document -g
+cd /path/to/your/repo
+document
+```
 
-## Usage
+Oh YEAH! That's it! We made it!
 
-## ONE second website building
-
-    cd /your/repo
-    document
-
-Oh YEAH! That's it! We made it.
