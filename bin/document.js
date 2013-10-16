@@ -5,7 +5,7 @@
 var document    = require('../');
 var express     = require('express');
 var clean       = require('clean');
-var schema      = require('../lib/schema');
+var schema      = require('./schema');
 var config      = require('../lib/config');
 var server      = require('../lib/server');
 
@@ -18,18 +18,22 @@ clean(schema).parseArgv(process.argv, function(err, args, details){
         delete args.help;
     }
 
-    var port = port;
-    delete port;
+    var port = args.port;
+    delete args.port;
 
-    var cfg = config.get_config(args);
+    config.get_config(args, function (err, cfg) {
+        if ( err ) {
+            return console.log(err.stack || err.message || err);
+        }
 
-    var app = express();
-    app.use(cfg.site_root, server(cfg));
-    app.use(cfg.site_root, express.static( cfg.public_root ));
+        var app = express();
+        app.use(cfg.site_root, server(cfg));
+        app.use(cfg.site_root, express.static( cfg.sys.public_root ));
 
-    app.listen(port, function () {
-        console.log('started at http://localhost:' + port );
-        require('child_process').exec('open http://localhost:' + port + cfg.site_root);
+        app.listen(port, function () {
+            console.log('started at http://localhost:' + port );
+            require('child_process').exec('open http://localhost:' + port + cfg.site_root);
+        });
     });
 });
 
