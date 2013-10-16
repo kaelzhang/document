@@ -11,27 +11,25 @@ var server      = require('../lib/server');
 
 var node_path   = require('path');
 
-clean(schema).parseArgv(process.argv, function(err, result, details){
-    if ( result.help ) {
+clean(schema).parseArgv(process.argv, function(err, args, details){
+    if ( args.help ) {
         return help();
+    } else {
+        delete args.help;
     }
 
-    var cfg = config.get_config({
-        doc_root: result.docs
-    });
+    var port = port;
+    delete port;
+
+    var cfg = config.get_config(args);
 
     var app = express();
+    app.use(cfg.site_root, server(cfg));
+    app.use(cfg.site_root, express.static( cfg.public_root ));
 
-    app.use(cfg.site_root, server(cfg, result));
-
-    // initialize static files
-    var theme_root = node_path.join(__dirname, '..', 'theme', 'public');
-    app.use(cfg.site_root, express.static( theme_root ));
-    app.use(cfg.site_root, express.directory( theme_root ));
-
-    app.listen(result.port, function () {
-        console.log('started at http://localhost:' + result.port );
-        require('child_process').exec('open http://localhost:' + result.port + cfg.site_root);
+    app.listen(port, function () {
+        console.log('started at http://localhost:' + port );
+        require('child_process').exec('open http://localhost:' + port + cfg.site_root);
     });
 });
 
