@@ -19,20 +19,25 @@ clean(schema).parseArgv(process.argv, function(err, args, details){
     }
 
     var port = args.port;
+    var open = args.open;
     delete args.port;
+    delete args.open;
 
     config.get_config(args, function (err, cfg) {
         if ( err ) {
             return console.log(err.stack || err.message || err);
         }
 
+        var site_root = cfg.user.site_root;
+
         var app = express();
-        app.use(cfg.user.site_root, server(cfg)); console.log('static', cfg.sys.public_root)
-        app.use(cfg.user.site_root, express.static( cfg.sys.public_root ));
+        app.use(site_root, server(cfg)); console.log('static', cfg.sys.public_root)
+        app.use(site_root, express.static( cfg.sys.public_root ));
+        app.use(site_root, express.directory( cfg.sys.public_root ));
 
         app.listen(port, function () {
             console.log('started at http://localhost:' + port );
-            require('child_process').exec('open http://localhost:' + port + cfg.user.site_root);
+            open && require('child_process').exec('open http://localhost:' + port + site_root);
         });
     });
 });

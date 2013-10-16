@@ -41,5 +41,10 @@ exports.schema = {
     },
 
     theme: {
+    },
+
+    open: {
+        type: Boolean,
+        default: true
     }
 };
