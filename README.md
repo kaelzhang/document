@@ -6,8 +6,6 @@
 
 Create your document site with only one command.
 
-`document` also contains utility methods to parse the document tree.
-
 # Life gets easier
 
 To create your document site, just:
