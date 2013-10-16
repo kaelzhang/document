@@ -17,6 +17,7 @@ exports.schema = {
         type: Boolean
     },
 
+    // cwd will always be defined
     cwd: {
         type: node_path,
         default: process.cwd()
@@ -40,7 +41,5 @@ exports.schema = {
     },
 
     theme: {
-        type: node_path,
-        default: node_path.join(__dirname, '..', 'theme')
     }
 };
