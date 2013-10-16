@@ -1,8 +1,11 @@
 $(function() {
-	$('.aj-nav').click(function(e) {
-		e.preventDefault();
-		$(this).parent().siblings().find('ul').slideUp();
-		$(this).next().slideToggle();
+	$('.J_nav').click(function(e) {
+        var element = $(this);
+        if ( !element.hasClass('J_has-content') ) {
+            e.preventDefault();
+            element.parent().siblings().find('ul').slideUp();
+            element.next().slideToggle();
+        }		
 	});
 
 	// Bootstrap Table Class

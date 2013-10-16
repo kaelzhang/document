@@ -6686,7 +6686,7 @@ code {
   text-shadow: none;
   background-color: #c5c5cb;
 }
-.nav.nav-list li.active a {
+.nav.nav-list li.active > a {
   background-color: #c5c5cb;
 }
 .nav.nav-list li.open > ul {

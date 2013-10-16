@@ -1,0 +1,20 @@
+<% include header %>
+<% if (config['repo']) { %>
+    <a href="https://github.com/<%= config['repo'] %>" target="_blank" id="github-ribbon"><img src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+<% } %>
+
+<div class="container-fluid fluid-height wrapper">
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <a class="brand pull-left" href="<%= config.site_root %>"><%= config['title'] %></a>
+        </div>
+    </div>
+
+    <div class="row-fluid columns content">
+        <% include sidebar %>
+        <% include content %>
+    </div>
+</div>
+</body>
+<% include footer %>
+</html>
