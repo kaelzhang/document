@@ -17,6 +17,7 @@
     "document",
     "web-server"
   ],
+  "homepage": "http://kael.me/document",
   "author": "kael",
   "license": "MIT",
   "bugs": {
