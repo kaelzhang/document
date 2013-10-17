@@ -1,5 +1,5 @@
 [![NPM version](https://badge.fury.io/js/document.png)](http://badge.fury.io/js/document)
-[![Build Status](https://travis-ci.org/kaelzhang/node-document.png?branch=master)](https://travis-ci.org/kaelzhang/node-document)
+<!-- [![Build Status](https://travis-ci.org/kaelzhang/node-document.png?branch=master)](https://travis-ci.org/kaelzhang/node-document) -->
 [![Dependency Status](https://gemnasium.com/kaelzhang/node-document.png)](https://gemnasium.com/kaelzhang/node-document)
 
 # document
