@@ -12,8 +12,8 @@
     "links": {
     },
     "languages": {
-        "zh-CN": "中文",
-        "en-US": "English"
+        "en-US": "English",
+        "zh-CN": "中文"
     },
     "site_root": "/docs",
     "index": "README.md",
