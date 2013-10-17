@@ -1,5 +1,6 @@
 module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.initConfig({
         less: {
@@ -11,8 +12,17 @@ module.exports = function(grunt) {
               "theme/public/css/daux-red.css": "theme/public/less/daux-red.less"
             }
           }
-        }
+        },
+        watch: {
+          scripts: {
+            files: ['theme/public/less/**/*.less'],
+            tasks: ['less'],
+            options: {
+              nospawn: true
+            },
+          },
+        },
     });
 
-    grunt.registerTask('default', ['less']);
+    grunt.registerTask('default', ['less', 'watch']);
 }
