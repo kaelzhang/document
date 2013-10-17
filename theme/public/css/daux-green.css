@@ -6437,6 +6437,19 @@ Homepage
 .homepage-footer.container-fluid .twitter:first-child {
   margin-top: 40px;
 }
+.credits {
+  text-align: right;
+  padding: 20px 0;
+  color: #8acc37;
+}
+.credits a {
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  .credits {
+    text-align: center;
+  }
+}
 /* ===========================================================================================
 Docs Body & Page Structure
 ============================================================================================== */
@@ -6457,6 +6470,11 @@ body {
 }
 .container-fluid.fluid-height {
   height: 100%;
+}
+@media (max-width: 767px) {
+  .container-fluid.fluid-height {
+    height: auto;
+  }
 }
 .columns {
   height: 100%;
@@ -6732,8 +6750,7 @@ code {
 .page-header h1 {
   margin-top: 0px;
 }
-/* To be applied to the  same element as page-header for sites that have sub-heading content such as Last modified time */
-.page-header .sub-heading {
+.page-header sub-heading {
   padding: 0px, 0px, 20px;
 }
 pre {

@@ -195,6 +195,18 @@ Homepage
 	}
 }
 
+.credits {
+    text-align: right;
+    padding: 20px 0;
+    color: @light;
+    a {
+        font-weight: bold;
+    }
+    @media (max-width: 767px) {
+        text-align: center;
+    }
+}
+
 /* ===========================================================================================
 Docs Body & Page Structure
 ============================================================================================== */
@@ -216,6 +228,9 @@ html, body {
     box-sizing: border-box;
     &.fluid-height {
     	height: 100%;
+        @media (max-width: 767px) {
+            height: auto;
+        }
     }
 }
 .columns {
@@ -434,7 +449,7 @@ code {
 			}
 		}
 		&.active {
-			a {
+			> a {
 				background-color: @sidebar-hover;
 			}
 		}
