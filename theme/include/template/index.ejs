@@ -7,6 +7,18 @@
     <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
             <a class="brand pull-left" href="<%= config.site_root %>"><%= config.title %></a>
+            <% if (config.languages) {
+                var l;
+                var text;
+                for (l in config.languages) {
+                    text = config.languages[l];
+                }
+
+                %><p class="navbar-text pull-right">
+                    <a href="<%= config.site_root %>/<%= l %>"><%= text %></a>
+                </p><%
+            }
+            %>
         </div>
     </div>
 
@@ -15,6 +27,7 @@
         <% include content %>
     </div>
 </div>
-</body>
 <% include footer %>
+</body>
+<% include scripts %>
 </html>
