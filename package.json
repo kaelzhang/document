@@ -1,6 +1,6 @@
 {
   "name": "document",
-  "version": "0.3.2",
+  "version": "0.4.2",
   "description": "Create your document site with just one command.",
   "// main": "index.js",
   "bin": {
@@ -34,6 +34,8 @@
   },
   "devDependencies": {
     "mocha": "~1.13.0",
-    "chai": "~1.8.1"
+    "chai": "~1.8.1",
+    "grunt": "~0.4.1",
+    "grunt-contrib-less": "~0.7.0"
   }
 }
