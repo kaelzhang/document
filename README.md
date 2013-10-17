@@ -79,6 +79,7 @@ It's best to use `document` command at the root of your repo, in order to read t
 - Custom themes support.
 - Plugins.
 - Programmatical APIs.
+- Watcher support so that you can uodate your documents without restarting your server.
 
 
 

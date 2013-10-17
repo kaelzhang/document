@@ -6282,6 +6282,21 @@ h6 {
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
 }
+h1 {
+  font-family: 'Roboto Slab', 'Hiragino Sans GB', 'STHeiti', 'Microsoft YaHei', sans-serif;
+  font-size: 50px;
+  line-height: 54px;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  display: block;
+  border-bottom: 1px solid #e7e7e9;
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: 38.5px;
+    line-height: 40px;
+  }
+}
 pre {
   padding: 0;
 }
