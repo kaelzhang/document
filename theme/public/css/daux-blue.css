@@ -6665,28 +6665,47 @@ code {
   filter: none;
   background-color: #3f4657;
   border-bottom: none;
-  padding: 6px 20px;
+  padding: 0 20px;
 }
 .navbar .navbar-inner .brand {
   color: #82becd;
   text-shadow: none;
   font-family: 'Roboto Slab', serif;
   font-weight: 700;
+  line-height: 32px;
 }
 .navbar .navbar-inner .navbar-text {
+  padding: 10px 0;
   color: #82becd;
 }
 .navbar .navbar-inner .navbar-text a {
   color: #82becd;
 }
+.navbar .navbar-inner .navbar-text.dropdown {
+  padding: 10px 5px;
+}
+.navbar .navbar-inner .navbar-text .dropdown-toggle {
+  display: block;
+  padding: 6px 0;
+  line-height: 20px;
+}
+.navbar .navbar-inner .navbar-text .caret {
+  border-top-color: #82becd;
+}
 @media (max-width: 767px) {
   .navbar .navbar-inner {
-    padding: 6px 10px;
+    padding: 0 10px;
   }
   .navbar .navbar-inner .navbar-text {
-    line-height: 16px;
+    line-height: 28px;
     margin: 12px 6px;
     font-size: 12px;
+  }
+  .navbar .navbar-inner .navbar-text.dropdown {
+    padding: 0 5px;
+  }
+  .navbar .navbar-inner .navbar-text .dropdown-toggle {
+    padding: 4px 0;
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {

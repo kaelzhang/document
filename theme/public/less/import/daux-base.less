@@ -413,24 +413,43 @@ code {
 		.kill-background-image;
 		background-color: @dark;
 		border-bottom: none;
-		padding: 6px 20px;
+		padding: 0 20px;
 		.brand {
 			color: @light;
 			text-shadow:none;
 			.roboto-slab.bold;
+            line-height: 32px;
 		}
 		.navbar-text {
+            padding: 10px 0;
 			color: @light;
 			a {
 				color: @light;
 			}
+            &.dropdown {
+                padding: 10px 5px;
+            }
+            .dropdown-toggle {
+                display: block;
+                padding: 6px 0;
+                line-height: 20px;
+            }
+            .caret {
+                border-top-color: @light;
+            }
 		}
 		@media (max-width: 767px) {
-			padding: 6px 10px;
+			padding: 0 10px;
 			.navbar-text {
-				line-height: 16px;
+				line-height: 28px;
 				margin: 12px 6px;
 				font-size: 12px;
+                &.dropdown {
+                    padding: 0 5px;
+                }
+                .dropdown-toggle {
+                    padding: 4px 0;
+                }
 			}
 		}
 	}
