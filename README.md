@@ -57,6 +57,16 @@ It's best to use `document` command at the root of your repo, in order to read t
 - title: the document title of the web page
 - tagline: the description
 
+## Why a node.js version of daux.io?
+
+The first time I met daux.io: Wow.
+
+Setting up nginx conf and tring to install daux.io under a sub path: Oh no!
+
+Spelunking into the source code: \_(:3」∠)\_
+
+That's it.
+
 
 ## Credits
 
