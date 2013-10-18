@@ -26,6 +26,7 @@ Oh YEAH! That's it! We made it!
 - Designed to minimize arguments and configurations as much as possible.
 - Support documents of multiple languages.
 - Supports [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown).
+- Support subdirectories.
 - Lovely and SEO friendly URLs.
 - Application cache so that to afford heavy traffic.
 - Custom themes and dev guide with `grunt-init` task. (what's comming...) 
