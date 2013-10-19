@@ -9,8 +9,7 @@ It is written in node.js, and you could easily install **document** with [NPM](h
 
 To create your document site, just:
 
-```sh
-npm install document -g
+```
 cd /path/to/your/repo
 document
 ```
@@ -30,6 +29,15 @@ Oh YEAH! That's it! We made it!
 - Application cache so that to afford heavy traffic.
 - Custom themes and dev guide with `grunt-init` task. (what's comming...) 
 - `document` middleware for [express.js](http://expressjs.com). (what's comming...)
+
+
+## Installation
+
+Easily install from [NPM](https://npmjs.org/):
+
+```sh
+npm install document -g
+```
 
 
 ## Usage
