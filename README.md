@@ -1,8 +1,5 @@
-[![NPM version](https://badge.fury.io/js/document.png)](http://badge.fury.io/js/document)
+# document [![NPM version](https://badge.fury.io/js/document.png)](http://badge.fury.io/js/document) [![Dependency Status](https://gemnasium.com/kaelzhang/node-document.png)](https://gemnasium.com/kaelzhang/node-document)
 <!-- [![Build Status](https://travis-ci.org/kaelzhang/node-document.png?branch=master)](https://travis-ci.org/kaelzhang/node-document) -->
-[![Dependency Status](https://gemnasium.com/kaelzhang/node-document.png)](https://gemnasium.com/kaelzhang/node-document)
-
-# document
 
 Create your document site with only **ONE** command.
 
