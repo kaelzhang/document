@@ -15,7 +15,9 @@
   },
   "keywords": [
     "document",
-    "web-server"
+    "web-server",
+    "documentation",
+    "generator"
   ],
   "homepage": "http://kael.me/document",
   "author": "kael",
