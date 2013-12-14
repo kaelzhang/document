@@ -45,6 +45,6 @@ exports.schema = {
 
     open: {
         type: Boolean,
-        default: false
+        default: true
     }
 };

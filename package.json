@@ -1,6 +1,6 @@
 {
   "name": "document",
-  "version": "0.4.5",
+  "version": "0.4.6",
   "description": "Create your document site with just one command.",
   "// main": "index.js",
   "bin": {
