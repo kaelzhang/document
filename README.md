@@ -49,7 +49,7 @@ Visit [the document site](http://kael.me/document) for details.
 
 The first time when I met daux.io: Wow.
 
-Setting up nginx conf and tring to install daux.io under a sub path: Oh no!
+Setting up nginx conf and trying to install daux.io under a sub path: Oh no!
 
 Spelunking into the source code: \_(:3」∠)\_
 
