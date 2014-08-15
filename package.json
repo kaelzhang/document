@@ -32,7 +32,7 @@
     "express": "~3.4.0",
     "fs-sync": "~0.2.4",
     "async": "~0.2.9",
-    "marked": "~0.2.9",
+    "marked": "~0.3.2",
     "highlight.js": "~7.3.0"
   },
   "devDependencies": {
